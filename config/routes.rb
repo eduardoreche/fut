@@ -1,4 +1,7 @@
 Fut::Application.routes.draw do
+  resources :subscribers
+
+
   authenticated :user do
     root :to => 'home#index'
   end
